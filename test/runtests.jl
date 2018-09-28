@@ -1,6 +1,6 @@
 using DataAndPlotting
 using Test
-using HD5F
+using HDF5
 using Plots
 
 filename = "array.h5"

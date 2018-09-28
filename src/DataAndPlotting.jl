@@ -35,7 +35,7 @@ end
 
 #write data to file
 export output
-function output(arr::Array{Floar64,2}, filename::String)
+function output(arr::Array{Float64,2}, filename::String)
     h5write(filename, "data", arr)
 end
 
