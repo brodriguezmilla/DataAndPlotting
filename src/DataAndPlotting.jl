@@ -47,9 +47,8 @@ end
 
 #Create a plot
 export makeplot
-function makeplot(arr::Array{Float64,2})
-    pyplot()
-    heatmap(arr, clin=(-1.0,+1.0), color=viridis)
+function makeplot(arr::Array{Float64,2}, filename::String)
+    heatmap(arr, clim=(-1.0,+1.0), color=:viridis)
     savefig(filename)
 end
 
